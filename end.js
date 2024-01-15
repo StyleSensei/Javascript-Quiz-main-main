@@ -1,10 +1,10 @@
 const username = document.getElementById("username");
 const saveScoreBtn = document.getElementById("saveScoreBtn");
 const finalScore = document.getElementById("finalScore");
-const mostRecentScore = localStorage.getItem("mostRecentScore");
+const mostRecentScore = sessionStorage.getItem("mostRecentScore");
 const input = document.getElementById("username");
 
-const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+const highScores = JSON.parse(sessionStorage.getItem("highScores")) || [];
 
 console.log(highScores);
 
@@ -28,7 +28,7 @@ const saveHighScore = (e) => {
     return b.score - a.score;
   });
 
-  localStorage.setItem("highScores", JSON.stringify(highScores));
+  sessionStorage.setItem("highScores", JSON.stringify(highScores));
 
   input.value = "";
   saveScoreBtn.disabled = true;
