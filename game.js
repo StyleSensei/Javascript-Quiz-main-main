@@ -13,25 +13,25 @@ const maximalQuestions = 4;
 
 let questions = [
   {
-    question: "What is the capital of Sweden ?",
+    question: "Vilken är huvudstaden i Sverige?",
     choice1: "Oslo",
     choice2: "Stockholm",
-    choice3: "Gothenburg",
-    choice4: "Malmoe",
+    choice3: "Göteborg",
+    choice4: "Malmö",
     answer: 2,
   },
 
   {
-    question: "What is the sweden currency?",
+    question: "Vilken valuta används i Sverige?",
     choice1: "Dollar",
     choice2: "Euro",
-    choice3: "Swedish Krona",
-    choice4: "Swedish Mark",
+    choice3: "Svensk krona",
+    choice4: "Svensk Mark",
     answer: 3,
   },
 
   {
-    question: "What is Swedens highest mountain?",
+    question: "Vilket är Sveriges högsta berg?",
     choice1: "Keslaberget",
     choice2: "Halti",
     choice3: "Skardstinden",
@@ -40,7 +40,7 @@ let questions = [
   },
 
   {
-    question: "What is Sweden in Swedish??",
+    question: "Vad är Sverige på svenska?",
     choice1: "Svealand",
     choice2: "Svorje",
     choice3: "Sverige",
