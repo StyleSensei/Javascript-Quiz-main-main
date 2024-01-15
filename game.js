@@ -57,7 +57,7 @@ const startgame = function () {
 
 const getNewQuestion = function () {
   if (gameQuestions.length === 0 || questionCounter > maximalQuestions) {
-    sessionStorage.setItem("mostRecentScore", score);
+    localStorage.setItem("mostRecentScore", score);
 
     return window.location.assign("end.html");
   }
